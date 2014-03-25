@@ -57,6 +57,7 @@ import com.sixnine.live.install.UpdateService;
 import com.sixnine.live.thread.ThreadPoolWrap;
 import com.sixnine.live.view.CustomViewpager;
 
+@SuppressLint("SimpleDateFormat")
 public class LiveFragment extends Fragment {
 
 	private View view;
@@ -181,6 +182,7 @@ public class LiveFragment extends Fragment {
 		pullToRefreshListView.setOnRefreshListener(onRefreshListener);
 		pullToRefreshListView.setOnScrollListener(onScrollListener);
 		mRetryView.setOnClickListener(mOnClickListener);
+		isDataFirstLoaded = false;
 	}
 
 	private void setNoMoreLayoutText(int stringId, boolean isProgressbarShow) {
@@ -275,7 +277,7 @@ public class LiveFragment extends Fragment {
 	}
 
 	private String getLastUpdateTimeStamp() {
-		SimpleDateFormat formatter = new SimpleDateFormat("M月d�?  mm:ss");
+		SimpleDateFormat formatter = new SimpleDateFormat("M月d日   mm:ss");
 		Date curDate = new Date(System.currentTimeMillis());// 获取当前时间
 		String tmStr = formatter.format(curDate);
 		return tmStr;
@@ -607,12 +609,9 @@ public class LiveFragment extends Fragment {
 	}
 
 	public static void startChatRoom(final Context context, Anchor host) {
-		if (!isPluginApkInstalled(context)) {
-			return;
-		}
 		if (null != LiveFragment.getLiveHost()) {
-			ComponentName componentName = new ComponentName("com.ninexiu.live",
-					"com.ninexiu.live.ChatRoomActivity");
+			ComponentName componentName = new ComponentName("com.sixnine.rtmpplayer",
+					"com.sixnine.rtmpplayer.PlayActivity");
 			Intent intent = new Intent();
 			intent.putExtra("roomId", host.getRoomId());
 			intent.putExtra("isPlay", host.getIsPlay());

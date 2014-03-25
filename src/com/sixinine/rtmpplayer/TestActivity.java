@@ -1,14 +1,15 @@
 package com.sixinine.rtmpplayer;
 
-import com.sixnine.live.R;
-import com.sixnine.live.fragment.LiveFragment;
-
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 
-public class MainActivity extends FragmentActivity {
+import com.sixnine.live.R;
+import com.sixnine.live.fragment.LiveFragment;
+
+public class TestActivity extends FragmentActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
