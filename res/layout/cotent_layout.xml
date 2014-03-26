@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:PullToRefresh="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f5f0f0" >
+
+ <!--    <RelativeLayout
+        android:id="@+id/top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="#fafafa" >
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/string_live_hall"
+            android:textColor="#404040"
+            android:textSize="20sp" />
+    </RelativeLayout> -->
+
+     <com.handmark.pulltorefresh.library.PullToRefreshListView 
+        android:id="@+id/lv_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        PullToRefresh:ptrAdapterViewBackground="#fafafa"
+        PullToRefresh:ptrHeaderSubTextColor="#7e7e7e"
+        PullToRefresh:ptrHeaderTextColor="#545454"
+        PullToRefresh:ptrMode="pullDownFromTop"
+        PullToRefresh:ptrShowIndicator="false"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@drawable/transparent" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView> 
+    
+    <LinearLayout
+        android:id="@+id/l_loadingview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ImageView
+            android:contentDescription="@string/host_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_loading" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l_retryview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ImageView
+            android:contentDescription="@string/network_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_net_error" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,8 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">RtmpPlayer</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">百度美女直播</string>
+    <string name="string_live">直播</string>
+    <string name="string_live_hall">直播大厅</string>
+    <string name="menu_settings">Settings</string>
+    
+    <string name="dialog_title_install">亲，需要安装美女直播插件哦</string>
+    <string name="dialog_title_update">亲，需要更新美女直播插件哦</string>
+    <string name="dialog_positive">立即安装</string>
+    <string name="dialog_negative">稍后再说</string>
+    
+    <string name="loading_begin">努力加载中，请稍后&#8230;</string>
+    <string name="loading_end">全部加载完了</string>
+    <string name="loading_error">网络连接失败，请稍后重试</string>
+    
+    <string name="insert_card">请插入SD卡</string>
+    <string name="down_sucess">下载成功</string>
+    <string name="down_fail">下载失败</string>
+    <string name="is_downing">正在下载</string>
+    
+    <string name="watching">%s</string>
+    
+    <string name="notification_content">notification image</string>
+    <string name="host_thumbnail">host_thumbnail</string>
+    <string name="host_image">host_image</string>
+    <string name="host_play">host_play</string>
+    <string name="host_loading">host_loading_</string>
+    <string name="network_error">network_error</string>
+    <string name="content">desc</string>
 
 </resources>

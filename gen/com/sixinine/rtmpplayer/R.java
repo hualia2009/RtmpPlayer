@@ -140,7 +140,7 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int transparent=0x7f020026;
     }
     public static final class id {
-        public static final int action_settings=0x7f050023;
+        public static final int action_settings=0x7f050022;
         public static final int advertising=0x7f05000f;
         public static final int anthor=0x7f05000e;
         public static final int both=0x7f050002;
@@ -160,7 +160,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int loading_tips=0x7f050017;
         public static final int logo=0x7f050016;
         public static final int lv_content=0x7f050008;
-        public static final int menu_settings=0x7f050022;
         public static final int name=0x7f050004;
         public static final int notificationImage=0x7f050012;
         public static final int notificationPercent=0x7f050014;
@@ -195,11 +194,9 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int video_list_more=0x7f03000b;
     }
     public static final class menu {
-        public static final int activity_main=0x7f0a0000;
-        public static final int main=0x7f0a0001;
+        public static final int main=0x7f0a0000;
     }
     public static final class string {
-        public static final int action_settings=0x7f070035;
         public static final int app_name=0x7f07001e;
         public static final int bg_download_check=0x7f07000f;
         public static final int bg_download_notify=0x7f070010;
@@ -214,7 +211,6 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int download_finish_notify=0x7f070013;
         public static final int download_netchange_notify=0x7f070011;
         public static final int download_traffic_overflow_notify=0x7f070012;
-        public static final int hello_world=0x7f070036;
         public static final int host_image=0x7f070030;
         public static final int host_loading=0x7f070032;
         public static final int host_play=0x7f070031;
@@ -279,11 +275,11 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f090001;
+        public static final int AppBaseTheme=0x7f090000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f090000;
+        public static final int AppTheme=0x7f090001;
     }
     public static final class styleable {
         /** Attributes that can be used with a PullToRefresh.

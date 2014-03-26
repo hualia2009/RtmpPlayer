@@ -1,13 +1,11 @@
-package com.sixinine.rtmpplayer;
+package com.sixnine.rtmpplayer;
 
-import android.app.Activity;
+import com.sixinine.rtmpplayer.R;
+
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-
-import com.sixnine.live.R;
-import com.sixnine.live.fragment.LiveFragment;
 
 public class TestActivity extends FragmentActivity {
 

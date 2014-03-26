@@ -1,4 +1,4 @@
-package com.sixinine.rtmpplayer;
+package com.sixnine.rtmpplayer;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -45,17 +45,7 @@ import android.widget.TextView;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.Mode;
 import com.handmark.pulltorefresh.library.PullToRefreshBase.OnRefreshListener2;
 import com.handmark.pulltorefresh.library.PullToRefreshListView;
-import com.sixnine.live.R;
-import com.sixnine.live.bean.AdInfo;
-import com.sixnine.live.bean.Anchor;
-import com.sixnine.live.bean.Version;
-import com.sixnine.live.data.AdPagerAdapter;
-import com.sixnine.live.data.AnchorListAdapter;
-import com.sixnine.live.data.MySharedPrefs;
-import com.sixnine.live.install.FileUtil;
-import com.sixnine.live.install.UpdateService;
-import com.sixnine.live.thread.ThreadPoolWrap;
-import com.sixnine.live.view.CustomViewpager;
+import com.sixinine.rtmpplayer.R;
 
 @SuppressLint("SimpleDateFormat")
 public class LiveFragment extends Fragment {
@@ -610,9 +600,9 @@ public class LiveFragment extends Fragment {
 
 	public static void startChatRoom(final Context context, Anchor host) {
 		if (null != LiveFragment.getLiveHost()) {
-			ComponentName componentName = new ComponentName("com.sixnine.rtmpplayer",
-					"com.sixnine.rtmpplayer.PlayActivity");
-			Intent intent = new Intent();
+//			ComponentName componentName = new ComponentName("com.sixnine.rtmpplayer",
+//					"com.sixnine.rtmpplayer.PlayActivity");
+			Intent intent = new Intent(context,PlayActivity.class);
 			intent.putExtra("roomId", host.getRoomId());
 			intent.putExtra("isPlay", host.getIsPlay());
 			intent.putExtra("roomTag", host.getRoomTag());
@@ -623,7 +613,7 @@ public class LiveFragment extends Fragment {
 			intent.putExtra("userNum", host.getUserNum());
 			intent.putExtra("impress", host.getImpress());
 			intent.putExtra("avatar", host.getAvatar());
-			intent.setComponent(componentName);
+//			intent.setComponent(componentName);
 			context.startActivity(intent);
 		}
 	}

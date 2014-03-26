@@ -1,8 +1,11 @@
-package com.sixinine.rtmpplayer;
+package com.sixnine.rtmpplayer;
+
+import com.sixinine.rtmpplayer.R;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View.OnClickListener;
 
 public class PlayActivity extends Activity {
 
@@ -22,6 +25,10 @@ public class PlayActivity extends Activity {
 		if("1".equals(isPlay)){
 			playerViewController.startPlay(roomTag, roomId);
 		}
+	}
+	
+	private void onClick(){
+		
 	}
 
 

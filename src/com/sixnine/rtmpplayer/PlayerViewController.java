@@ -1,4 +1,4 @@
-package com.sixinine.rtmpplayer;
+package com.sixnine.rtmpplayer;
 
 import android.app.Activity;
 import android.graphics.Point;
@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.RelativeLayout.LayoutParams;
 
+import com.sixinine.rtmpplayer.R;
 import com.yishi.sixshot.IFlyMediaCallback;
 import com.yishi.sixshot.player.FlyRtmpPlayer;
 
